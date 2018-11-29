@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'rsuregular';
+    src: url('fonts/rsu_regular-webfont.eot');
+    src: url('fonts/rsu_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/rsu_regular-webfont.woff') format('woff'),
+         url('fonts/rsu_regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rsu_textregular';
+    src: url('fonts/rsu_text_regular-webfont.eot');
+    src: url('fonts/rsu_text_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/rsu_text_regular-webfont.woff2') format('woff2'),
+         url('fonts/rsu_text_regular-webfont.woff') format('woff'),
+         url('fonts/rsu_text_regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font0{
+font-family: rsuregular;
+text-shadow: 4px 4px 8px rgba(150, 150, 150, 1);
+}
+
+.font1{									
+font-family: rsuregular;
+font-size: 23;
+}
+
+
+
+.font2{
+font-family: rsuregular;
+font-size: 21;
+color:#ffffff;
+}
+
+/***************************************************************************************************** Fonts ******************************************************************************************************/
+
+.menu
+ { 
+ background-image:url(pic/topmenu.png);
+ background-position:center;
+background-repeat : repeat-x;
+ margin:-8px ;
+ height: 113px ;
+}
+
+.hover1
+{
+color:black;
+text-decoration: none; 
+transition: all 0.3s  ease-out;
+}
+.hover1:hover
+{
+color:#f58020;
+text-decoration :  none;
+}
+
+/***************************************************************************************************** banner *******************************************************************************************************/
+
+#back-to-top{
+		position:fixed;
+		bottom:0px;
+		right:60px;
+	}
+	#back-to-top a{
+		text-align:center;
+		text-decoration:none;
+		color:#d1d1d1;
+		display:block;
+		width:80px;
+		/*??CSS3??transition?????????????????*/
+		-moz-transition:color 1s; 
+		-webkit-transition:color 1s;
+		-o-transition:color 1s;
+	}
+	#back-to-top a:hover{
+		color:#979797;
+	}
+	#back-to-top a span{
+		background:#d1d1d1;
+		border-radius:6px;
+		display:block;
+		height:80px;
+		width:80px;
+		background:#d1d1d1 url(pic/arrow-up.png) no-repeat center center;
+		margin-bottom:5px;
+		-moz-transition:background 1s;
+		-webkit-transition:background 1s;
+		-o-transition:background 1s;
+	}
+	#back-to-top a:hover span{
+		background:#979797 url(pic/arrow-up.png) no-repeat center center;
+	}
+
+
+/***************************************************************************************************** back to top ***************************************************************************************/
+
+.ff{
+ background:#2d2d2d;
+ width:100%;
+ height:200px;
+ }
+
+.cc{
+ background:#f68c36;
+ width:100%;
+ height:30px;
+ }
+
+/********************************************************************************************************* foonter ************************************************************************************/
+.ig{
+border: 1px solid rgba(0,0,0,0.1);
+ box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
+ border-radius: 30%;
+}
+
+

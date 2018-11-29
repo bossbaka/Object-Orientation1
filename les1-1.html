@@ -1,0 +1,96 @@
+﻿<html>
+ <head>
+  <title>:: บทเรียน 1 ::</title>
+ 
+ <link rel="shortcut icon" href="pic/ele_fire.ico">
+<link rel="stylesheet" type="text/css" href="style.css">
+ 
+ </head>
+ <body bgcolor="#f6f6f6" link="#414141" vlink="#ffffff" alink="#0033cc">
+									<div class="menu">
+									<center><table width="1000"  align="center" border="0">
+									<tr>
+											<td width="350" align="center"><img src="pic/logo1.png"></td>
+											<td width="650"><p align="right"></td>
+									</tr></div>
+									<!--------------------------------------------------------------------------------------------  Head1 --------------------------------------------------------------------------------------------->
+									<table width="1000" height="47" align="center" border="0">
+									<tr>
+											<td width="1000" align="center"><div class="font1">
+											<a href="index.html" class="hover1">หน้าหลัก</a>&nbsp; | &nbsp; 
+											<a href="les1-1.html" class="hover1">บทเรียน</a>&nbsp; | &nbsp;
+											<a href="test1-1.html" class="hover1">แบบทดสอบ</a>&nbsp; | &nbsp;
+											<a href="register.html" class="hover1">สมัครสมาชิก</a>&nbsp; | &nbsp; 
+											<a href="about.html" class="hover1">เกี่ยวกับเรา</a></div></td>
+									</tr>
+									</table>
+									</table></center><br><br>
+<table width="1000" align="center" border="0"><tr><td><p align="left"><font size="21" class="font0">บทที่ 1 Object Orientation และ UML</font></p></td></tr></table><br>
+
+<table width="1000"  align="center" border="0">
+<tr>
+<td>									
+										<table  align="left" border="0" cellspacing="0">
+										<tr>
+										<td><div class="border2"><center><h2>บทเรียน</h2></center><hr width="200"><br>
+																<ul>
+																<li><a href="les1-1.html">บทที่ 1</a></li>
+																<li><a href="les2-1.html">บทที่ 2</a></li>
+																<li><a href="les3-1.html">บทที่ 3</a></li>
+																<li><a href="les4-1.html">บทที่ 4<a/></li>
+																<li><a href="les5-1.html">บทที่ 5</a></li>
+																<li><a href="les6-1.html">บทที่ 6</a></li>
+																<li><a href="les7-1.html">บทที่ 7</a></li>
+																<li><a href="les8-1.html">บทที่ 8</a></li>
+																<li><a href="les9-1.html">บทที่ 9</a></li>
+													</ul>
+											</div></td>
+										</tr>
+										</table>
+ 
+										<table width="690" align="right" border="0" cellspacing="0">
+										<tr>
+											<td><div id="container">
+													<div class="h1">บทที่ 1 Object Orientation และ UML หน้าที่ 1</div>
+													<div class="hard_break"><strong>1.1 Object Orientation คืออะไร</strong><br>&nbsp;&nbsp;&nbsp; ในชีวิตประจำวัน เมื่อมองดูรอบๆ ตัวจะพบเห็นวัตถุ (Object) ต่างๆ มากมาย ไม่ว่าจะเป็นวัตถุที่สามารถมองเห็นได้และจับต้องได้ (Tangible Objects) เช่น โต๊ะ รถยนต์ คอมพิวเตอร์ หรือแม้แต่ตัวของเราเองเป็นต้น และวัตถุที่มีอยู่จริงแต่ไม่สามารถจับต้องได้ (Intangible Objects) ตัวอย่างเช่น กฎหมาย (กฎข้อบังคับที่รัฐบัญญัติขึ้น) เวลา หรือความรู้ต่างๆ เป็นต้น<br>&nbsp;&nbsp;&nbsp; ในโลกของเรามี Objects ต่างๆ มากมาย สิ่งที่เกิดขึ้นจาก Objects ต่างๆ ก็คือ กิจกรรม (Activities) ความเคลื่อนไหว (Movement) หรือการกระทำ (Actions) เช่น คนรับประทานอาหาร สุนัขเล่นกับแมว เป็นต้น<br>&nbsp;&nbsp;&nbsp; ถ้าพิจารณาโดยละเอียดแล้วจะพบว่ากิจกรรมต่างๆ ที่เกิดขึ้นในชีวิตประจำวันนั้นเกิดจากการมีความสัมพันธ์ (Relationship) และการมีปฏิสัมพันธ์ (Interaction) ระหว่าง Object 2 ตัวขึ้นไป ตัวอย่างเช่น<br>&nbsp;&nbsp;&nbsp; - กิจกรรมคนรับประทานอาหาร เกิดจาก Interaction “รับประทานอาหาร” ระหว่างคนและอาหาร และเกิดจาก Relationship “เป็นเจ้าของ” ระหว่างคนและอาหาร (เพราะคนเป็นเจ้าของข้าว จึงจะสามารถรับประทานได้)<br>&nbsp;&nbsp;&nbsp; - กิจกรรมสุนัขเล่นกับแมว เกิดจาก Interaction “เล่น” ระหว่างสุนัขและแมว และเกิดจาก Relationship “เป็นเพื่อน” ระหว่างสุนัขกับแมว<br><br>&nbsp;&nbsp;&nbsp; เพื่อความเข้าใจในเรื่องของ Relationship และ Interaction จากตัวอย่างต่อไปนี้<br>&nbsp;&nbsp;&nbsp; <strong>ตัวอย่าง 1.1</strong> “นาย ก เปิดตู้เย็นยี่ห้อ A (ซึ่งเป็นตู้เย็นของนาย ก) หยิบน้ำ (ซึ่งอยู่ในตู้เย็น) มาดื่ม” สามารถแยกแยะหา Object, Relationship และ Interactions ได้ดังนี้<br>&nbsp;&nbsp;&nbsp; 1. Objects - นาย ก, ตู้เย็นยี่ห้อ A, และน้ำ<br>&nbsp;&nbsp;&nbsp; 2. Relationships – เกิดจากความสัมพันธ์<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - นาย ก เป็นเจ้าของตู้เย็นยี่ห้อ A<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - น้ำอยู่ในตู้เย็นยี่ห้อ A<br>&nbsp;&nbsp;&nbsp; 3. Interactions ระหว่าง Objects ที่สนใจ ได้แก่<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - นาย ก เปิดตู้เย็นยี่ห้อ A<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  - นาย ก หยิบน้ำ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - นาย ก ดื่มน้ำ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; เมื่อพิจารณาจากตัวอย่าง อาจจะเกิดคำถามว่าจะสามารถแยกแยะความแตกต่างระหว่าง Relationship กับ Interaction ได้อย่างไร เพื่อตอบคำถามนี้ สามารถสรุปเป็นหลักการในการแยกแยะ Relationship และ Interaction ได้ดังนี้<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>1. Relationship</strong> คือ 	ความเกี่ยวข้องกัน หรือความสัมพันธ์ระหว่าง Objects 2 ตัว	ขึ้นไป เช่น ความเป็นแม่-ลูก ความเป็นเจ้าของการมีอยู่ เป็นต้น<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>2. Interaction</strong> คือ 	ปฏิสัมพันธ์ หรือการกระทำใดๆ ที่เกิดขึ้นระหว่าง Objects 2 ตัว ขึ้นไป เช่น การสร้าง การเปลี่ยนแปลง การเล่น การกระตุ้น เป็นต้น 		ซึ่ง Interaction นี้เองที่ทำให้เกิด กิจกรรม (Activities) ต่างๆ ในโลกนี้<br><br>&nbsp;&nbsp;&nbsp; <strong>Domain</strong><br>&nbsp;&nbsp;&nbsp; จากตัวอย่างที่่ 1.1 ถ้าสังเกตให้ดีจะเห็นว่า จะพูดถึง Objects ที่เราสนใจ หรือ Relationships ที่เราสนใจ เป็นต้น คำว่า “ที่เราสนใจ” เป็นการให้กรอบของสิ่งที่เราต้องการพิจารณา หรือสนใจ เพราะเราไม่สามารถสนใจในทุกๆ วัตถุในโลกในเวลาเดียวกันได้ และในขณะเดียวกันเราก็ไม่สามารถให้ความสนใจกับทุกๆ ความสัมพันธ์ และทุกๆ กิจกรรม หรือการกระทำที่เกิดขึ้นได้เช่นกัน<br>&nbsp;&nbsp;&nbsp; เราสามารถจำลองสภาพความเป็นจริง หรือสถานการณ์ต่างๆ ในโลกของความเป็นจริง (Real World) ได้ด้วย Objects รวมทั้ง Relationships และ Interactions ระหว่าง Objects ซึ่งอยู่ภายใน Domain เดียวกัน<br>&nbsp;&nbsp;&nbsp; ใน Domain หนึ่งๆ นั้นสามารถมี Objects ได้ตั้งแต่ 2 ตัวขึ้นไป จนถึงจำนวนนับไม่ถ้วน ในขณะเดียวกัน Object ตัวเดียวกันก็สามารถอยู่ในหลายๆ Domains ได้เช่นเดียวกัน ซึ่งนั่นขึ้นอยู่กับว่าเราจะกำหนด Domain ที่เราสนใจ (Domain of interest) อย่างไรนั่นเอง<br>&nbsp;&nbsp;&nbsp; แนวคิดของ Object Orientation นั้นมาจากคำว่า Object ซึ่งแปลว่า วัตถุที่จับต้องได้และจับต้องไม่ได้ และ Orientation ซึ่งมาจากคำว่า Orient ซึ่งเป็นคำกริยาที่แปลว่านำทาง หรือนำไป ซึ่งเมื่อนำมารวมกันจะหมายถึง การใช้ Object เป็นตัวหลักเพื่อการพิจารณาความเป็นจริงต่างๆ ที่เกิดขึ้นในโลก<br>&nbsp;&nbsp;&nbsp; 	เราสามารถนำเอา Object Orientation มาใช้เป็นแนวคิดและเป็นบรรทัดฐานในการวิเคราะห์ และออกแบบระบบคอมพิวเตอร์ได้ ซึ่งการประยุกต์ใช้ Object Orientation เพื่อการวิเคราะห์และออกแบบระบบคอมพิวเตอร์ ทำให้เกิดศาสตร์ตัวใหม่ขึ้นเรียกว่า Object Oriented Analysis and Design หรือเรียกย่อๆ ว่า OOAD (การวิเคราะห์และออกแบบเชิงวัตถุ)
+													<br><hr width="500" size=3><br><table width="600" align="right" border="0"><tr><td align="right"><ul id="menu1">
+																										  <li  id="menu2"><a href="les1-1.html" id="menu1lia">1</a></li>
+																										  <li  id="menu2"><a href="les1-2.html" id="menu1lia">2</a></li>
+																										  <li  id="menu2"><a href="les1-2.html" id="menu1lia">Next</a></li>
+																							</ul></td></tr></table>
+													</div>
+													</div></td>
+										</tr>
+										<tr><td></td></tr>
+										</table>
+ </table>
+ 
+ 
+ 
+<!-------------------------------------------------------------------------------------------- footer ----------------------------------------------------------------------------------------->
+<br><br><br><br><br>
+<div class="cc"></div>
+<div class="ff">
+<table width="1000" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr>
+	<td width="500" height="200" valign="top" class="font2"><br>OBJECT ORIENTATION<br> Copyright &copy; 2014 All Right Reserved.</td>
+	<td width="500" height="200" valign="top" class="font2" align="right"><br>CONTACT US <br> &nbsp; Hot line : 036-364487 <br><a href="mailto:bosskung@gmail.com"><img src="pic/icon_email.png"></a>&nbsp; E-mail : bosskung@gmail.com&nbsp;<br>
+	<a href="http://www.facebook.com" target="_blank"><img src="pic/facebook-variation.png"></a>&nbsp;<a href="https://twitter.com/?lang=th" target="_blank"><img src="pic/twitter-variation.png"></a>&nbsp;<a href="http://instagram.com/" target="_blank"><img src="pic/instagram-variation.png"></a>&nbsp;<img src="pic/rss-variation.png"> &nbsp;</td>
+</tr>
+</table></div>
+
+
+
+<!--------------------------------------------------------------------------------------------  back to top ----------------------------------------------------------------------------------------->
+
+<p id="back-to-top" style="display: black; opacity;">
+<a href="#top">
+<span></span>
+</a>
+</p>
+
+
+
+
+</body>
+</html>

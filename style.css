@@ -1,0 +1,535 @@
+@font-face {
+    font-family: 'rsuregular';
+    src: url('fonts/rsu_regular-webfont.eot');
+    src: url('fonts/rsu_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/rsu_regular-webfont.woff') format('woff'),
+         url('fonts/rsu_regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rsu_textregular';
+    src: url('fonts/rsu_text_regular-webfont.eot');
+    src: url('fonts/rsu_text_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/rsu_text_regular-webfont.woff2') format('woff2'),
+         url('fonts/rsu_text_regular-webfont.woff') format('woff'),
+         url('fonts/rsu_text_regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LayijiTaMaiTine1Regular';
+    src: url('fonts/layiji_tarminetine1.eot');
+    src: url('fonts/layiji_tarminetine1.eot') format('embedded-opentype'),
+         url('fonts/layiji_tarminetine1.woff2') format('woff2'),
+         url('fonts/layiji_tarminetine1.woff') format('woff'),
+         url('fonts/layiji_tarminetine1.ttf') format('truetype'),
+         url('fonts/layiji_tarminetine1.svg#LayijiTaMaiTine1Regular') format('svg');
+		 font-weight: normal;
+		 font-style: normal;
+}
+
+@font-face {
+    font-family: 'supermarketregular';
+    src: url('fonts/supermarket-webfont.eot');
+    src: url('fonts/supermarket-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/supermarket-webfont.woff2') format('woff2'),
+         url('fonts/supermarket-webfont.woff') format('woff'),
+         url('fonts/supermarket-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font0{
+font-family: rsuregular;
+text-shadow: 4px 4px 8px rgba(150, 150, 150, 1);
+}
+
+.font1{									
+font-family: rsuregular;
+font-size: 23;
+}
+
+.font2{
+font-family: rsuregular;
+font-size: 21;
+color:#ffffff;
+}
+
+.font3{									
+font-family: rsu_textregular;
+font-size: 30;
+font-weight: bold;
+}
+
+/***************************************************************************************************** Fonts ******************************************************************************************************/
+
+.menu
+ { 
+ background-image:url(pic/topmenu.png);
+ background-position:center;
+background-repeat : repeat-x;
+ margin:0px ;
+ height: 113px ;
+}
+
+.hover1
+{
+color:black;
+text-decoration: none; 
+transition: all 0.3s  ease-out;
+}
+.hover1:hover
+{
+color:#f58020;
+text-decoration :  none;
+}
+
+/***************************************************************************************************** banner *******************************************************************************************************/
+
+
+#back-to-top{
+		position:fixed;
+		bottom:0px;
+		right:60px;
+	}
+	#back-to-top a{
+		text-align:center;
+		text-decoration:none;
+		color:#d1d1d1;
+		display:block;
+		width:80px;
+		/*??CSS3??transition?????????????????*/
+		-moz-transition:color 1s; 
+		-webkit-transition:color 1s;
+		-o-transition:color 1s;
+	}
+	#back-to-top a:hover{
+		color:#979797;
+	}
+	#back-to-top a span{
+		background:#d1d1d1;
+		border-radius:6px;
+		display:block;
+		height:80px;
+		width:80px;
+		background:#d1d1d1 url(pic/arrow-up.png) no-repeat center center;
+		margin-bottom:5px;
+		-moz-transition:background 1s;
+		-webkit-transition:background 1s;
+		-o-transition:background 1s;
+	}
+	#back-to-top a:hover span{
+		background:#979797 url(pic/arrow-up.png) no-repeat center center;
+	}
+
+
+/***************************************************************************************************** back to top ***************************************************************************************/
+
+
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 965px; 
+    height: 320px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+	border-radius:10px 10px 10px 10px;
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+
+/******************************************************************************************************* slidshow ******************************************************************************************/
+
+
+.ra{
+border-radius: 20px/60px;
+font-family: rsu_textregular;
+font-size:40;
+box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
+}
+
+
+/****************************************************************************************************** ID **************************************************************************************************/
+
+
+.lifted_content_box {
+    display: block;
+    width: 650px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.lifted_content_box h1 {
+    font-size: 30px;
+    font-family: rsu_textregular;
+	font-weight: bold;
+    line-height: 1.7em;
+    margin: 0; /* for the triangular shape/cut */
+    height: 6;
+	width: 150px;
+    border-bottom: 30px solid #505050; /* kinda acts as the height */
+    border-right: 25px solid transparent; /* adjust to change the angle */
+    display: inline-block;
+    color: #fff;
+    text-shadow: 1px 1px 0 #585858;
+    padding: 0 28px;
+    vertical-align: bottom; /* fixes the mysterious gaps bug */
+}
+
+.lifted_content_box div {
+    padding: 20px;
+    background: #fff;
+    border-top: 6px solid #505050; /* was just experimenting. gives a nice look and feel: D */;
+    -webkit-box-shadow: inset 0px 0px 10px rgba(0,0,0,0.20);
+    -moz-box-shadow: inset 0px 0px 10px rgba(0,0,0,0.20);
+    box-shadow: inset 0px 0px 50px rgba(0,0,0,0.20);
+}
+
+.lifted_content_box p {
+    margin: 0 0 10px;
+    color: #555;
+    line-height: 1.5em;
+}
+
+/*********************************************************************************************** basic styling first  **********************************************************************************/
+
+
+
+*{margin:auto;padding:auto;}
+
+
+#login{
+  width:300px;
+  margin:0;
+}
+
+
+#login h1{
+  background:#4c4c4c;
+  font-family: LayijiTaMaiTine1Regular;
+  font-size:35;
+  padding:15px ;
+  color:#fff;
+    border: 1px solid #c9c9c9;
+  -webkit-box-shadow: 0 0 5px #c9c9c9;
+  box-shadow: 0 0 5px #c9c9c9;
+  border-radius: 45 5 0 0px;
+}
+
+
+form{
+  background:#f0f0f0;
+  padding:6% 4%;
+  height:210px;
+  border-radius: 0 0 35 5px;
+    border: 1px solid #c9c9c9;
+  -webkit-box-shadow: 0 0 5px #c9c9c9;
+   box-shadow: 0 0 5px #c9c9c9;
+}
+
+
+input[type="Username"],input[type="Password"]{
+  width:100%;
+  margin-bottom:4%;
+  padding:3%;
+}
+
+
+input[type="submit"]{
+  width:150px;
+  background:#4c4c4c;
+  padding:1%;
+  color:#fff;
+  cursor:pointer;
+  font-family:LayijiTaMaiTine1Regular;
+  font-size:23;
+  transition: all 0.6s  ease-out;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 10px;
+}
+
+
+input[type="submit"]:hover{
+  background:#6f6f6f;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 10px;
+}
+
+.register{
+ font-family: rsu_textregular;
+  font-size:31;
+  }
+
+/**************************************************************************************************** login *******************************************************************************************/
+
+.ff{
+ background:#2d2d2d;
+ width:100%;
+ height:200px;
+ }
+
+.cc{
+ background:#f68c36;
+ width:100%;
+ height:30px;
+ }
+
+/********************************************************************************************************* foonter ************************************************************************************/
+
+
+.border2
+{
+width: 250px;
+height: 500px;
+background: #969696;
+border: 1px solid #7d7d7d; 
+border-radius:18px 18px 18px 18px;
+word-wrap:break-word;
+box-shadow: 10px 10px 10px #7d7d7d;
+font-family: supermarketregular;
+font-size:21;
+color:#ffffff;
+padding:10px ;
+}
+
+/***************************************************************************************** *************************************************************************************/
+
+
+#container {  
+    background: #dad3cb;  
+    margin: auto;  
+    width: 650px;  
+    padding-top: 30px;  
+	border-radius: 20px 20px 20px 20px;
+}  
+  
+.h1 {  
+	background: #f68c36;
+	background: -moz-linear-gradient(top,  #a8c4c0 0%, #7aa5a2 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a8c4c0), color-stop(100%,#7aa5a2));
+	background: -webkit-linear-gradient(top,  #a8c4c0 0%,#7aa5a2 100%);
+	background: -o-linear-gradient(top,  #a8c4c0 0%,#7aa5a2 100%);
+	background: -ms-linear-gradient(top,  #a8c4c0 0%,#7aa5a2 100%);
+	background: linear-gradient(top,  #a8c4c0 0%,#7aa5a2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8c4c0', endColorstr='#7aa5a2',GradientType=0 );
+	
+	padding: 0 20px;  
+	line-height: 50px;
+	height: 50px;
+    margin-left: -15px;  
+    margin-top: 0;  
+    position: relative;  
+    width: 570px;  
+	font-size: 28px;
+	font-family: LayijiTaMaiTine1Regular;
+	box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.3);
+  
+    color: #3b3a3b;  
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);  
+}  
+  
+.h1:after {  
+	position: absolute;
+	content: '';
+	width: 0; height: 0;  
+	line-height: 0;  
+	border-left: 15px solid transparent;  
+	border-top: 10px solid #729c9a;  
+	bottom: -10px;  
+	left: 0;  
+	position: absolute;  
+	z-index: -1;
+}  
+
+.h1:before {
+	content: '';
+	position: absolute;
+	top: 5px;
+	height: 39px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+	width: 100%;
+	left: 0;
+}
+
+
+
+
+.hard_break{
+white-space: pre-wrap; /* css-3 */
+white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+white-space: -pre-wrap; /* Opera 4-6 */
+white-space: -o-pre-wrap; /* Opera 7 */
+word-wrap: break-word; /* Internet Explorer 5.5+ */
+font-family: rsu_textregular;
+font-size: 32;
+margin: 23px 10px 10px 20px;
+}
+
+/********************************************************************************* ***********************************************************************************************/
+
+.elegant-calencar {
+    width: 300px;
+    height: 430px;
+    border: 1px solid #c9c9c9;
+    -webkit-box-shadow: 0 0 5px #c9c9c9;
+    box-shadow: 0 0 5px #c9c9c9;
+    text-align: center;
+    position: relative;
+border-radius: 35 35 35 35px;
+}
+
+#header {
+    font-family: rsuregular;
+    height: 214px;
+    background-color:#4c4c4c;
+    margin-bottom: 1em;
+	width:300px;
+	border-radius: 35 35 0 0px;
+}
+
+
+.head-info {
+    float: left;
+    width: 16em;
+}
+
+.head-day {
+    margin: 10px;
+    font-size: 8em;
+    line-height: 1;
+    color: #fff;
+}
+
+.head-month {
+    margin-top: 0px;
+    font-size: 2.3em;
+    line-height: 1;
+    color: #fff;
+}
+
+#calendar {
+    width: 300px;
+    margin: 0px;
+	font-family: rsuregular;
+}
+
+.tr1 {
+    height: 2em;
+    line-height: 2em;
+}
+
+.tr1 {
+    color: #e66b6b;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.tb1 {
+    color: #252a25;
+}
+
+.td2{
+    width: 14%;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition:all 0.2s ease-in;
+    transition:all 0.2s ease-in;
+}
+
+.td2:hover, .selected {
+    color: #fff;
+    background-color: #2a3246;
+    border: none;
+}
+
+.td2:active {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+}
+
+#today {
+    background-color: #e66b6b;
+    color: #fff;
+    font-family: rsuregular;
+	font-size:20;
+    border-radius: 50%;
+}
+
+#disabled {
+    cursor: default;
+    background: #fff;
+}
+
+#disabled:hover {
+    background: #fff;
+    color: #c9c9c9;
+}
+
+
+
+/************************************************************************************** *******************************************************************************************/
+/* First styling the menu */
+#menu1 {
+	list-style: none;
+	padding: 0 12px; margin: 0;
+	background: #5c8a97;
+	margin: 0px;
+	display: inline-block;
+	height: 50px;
+	overflow: hidden;
+	border-radius: 5px;
+	/* 3d effect using box-shadows */
+	box-shadow: 0px 4px #3b636e, 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Now the list items */
+#menu2 {
+	margin-left: 10px;
+	display: inline-block;
+	position: relative;
+	bottom: -11px;
+}
+
+#menu2:first-child {margin: 0}
+
+/* The real fun begins here :D */
+#menu1lia {
+	background: #a1d0dd;
+	display: block;
+	border-radius: 3px;
+	padding: 0 12px;
+	color: white;
+	position: relative;
+	text-decoration: none;
+	height: 27px;
+	font: 16px / 27px rsuregular;
+	/* Now the 3d effect */
+	box-shadow: 0px 3px #7fafbc, 0px 4px 5px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s ease;
+}
+
+
+
+#menu1lia:hover {background: #bae0ea}
+#menu1lia:active {
+	background: #bae0ea;
+	/* Now, let's make it look like its pressed down when clicked */
+	bottom: -3px;
+	box-shadow: 0px 0px #7fafbc, 0px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+

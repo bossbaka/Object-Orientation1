@@ -1,0 +1,100 @@
+﻿<html>
+ <head>
+  <title>:: บทเรียน 3 ::</title>
+ 
+  <link rel="shortcut icon" href="pic/ele_fire.ico">
+<link rel="stylesheet" type="text/css" href="style.css">
+ 
+ 
+ </head>
+<body bgcolor="#f6f6f6" link="#414141" vlink="#ffffff" alink="#0033cc">
+									<div class="menu">
+									<center><table width="1000"  align="center" border="0">
+									<tr>
+											<td width="350" align="center"><img src="pic/logo1.png"></td>
+											<td width="650"><p align="right"></td>
+									</tr></div>
+									<!--------------------------------------------------------------------------------------------  Head1 --------------------------------------------------------------------------------------------->
+									<table width="1000" height="47" align="center" border="0">
+									<tr>
+											<td width="1000" align="center"><div class="font1">
+											<a href="index.html" class="hover1">หน้าหลัก</a>&nbsp; | &nbsp; 
+											<a href="les1-1.html" class="hover1">บทเรียน</a>&nbsp; | &nbsp;
+											<a href="test1-1.html" class="hover1">แบบทดสอบ</a>&nbsp; | &nbsp;
+											<a href="register.html" class="hover1">สมัครสมาชิก</a>&nbsp; | &nbsp; 
+											<a href="about.html" class="hover1">เกี่ยวกับเรา</a></div></td>
+									</tr>
+									</table>
+									</table></center><br><br>
+<table width="1000" align="center" border="0"><tr><td><p align="left"><font size="21" class="font0">บทที่ 3 Use Case Modeling</font></p></td></tr></table><br>
+  
+
+ <table width="1000"  align="center" border="0">
+<tr>
+<td>									
+										<table  align="left" border="0" cellspacing="0">
+										<tr>
+										<td><div class="border2"><center><h2>บทเรียน</h2></center><hr width="200"><br>
+																<ul>
+																<li><a href="les1-1.html">บทที่ 1</a></li>
+																<li><a href="les2-1.html">บทที่ 2</a></li>
+																<li><a href="les3-1.html">บทที่ 3</a></li>
+																<li><a href="les4-1.html">บทที่ 4<a/></li>
+																<li><a href="les5-1.html">บทที่ 5</a></li>
+																<li><a href="les6-1.html">บทที่ 6</a></li>
+																<li><a href="les7-1.html">บทที่ 7</a></li>
+																<li><a href="les8-1.html">บทที่ 8</a></li>
+																<li><a href="les9-1.html">บทที่ 9</a></li>
+													</ul>
+											</div></td>
+										</tr>
+										</table>
+ 
+										 <table width="690" align="right" border="0" cellspacing="0">
+										<tr>
+											<td><div id="container">
+													<div class="h1">บทที่ 3 Use Case Modeling หน้าที่ 1</div>
+													<div class="hard_break"><strong>3.1 Use Cases, Actors, Scenario และ Use Case Diagram</strong><br>&nbsp;&nbsp;&nbsp; Subsystem ต่างๆ มักมีปฏิสัมพันธ์กับสิ่งอื่นๆ 2 รูปแบบ<br>&nbsp;&nbsp;&nbsp; 1. ปฏิสัมพันธ์กับคน หรือกลไกอื่น ภายนอกระบบ<br>&nbsp;&nbsp;&nbsp; 2. ปฏิสัมพันธ์กับ Subsystem ในระบบ<br>&nbsp;&nbsp;&nbsp; หรือทั้ง 2 รูปแบบพร้อมๆ กัน ในการแยกแยะว่าสิ่งใดอยู่นอกหรืออยู่ในระบบ ขอให้ใช้บรรทัดฐานนี้<br>&nbsp;&nbsp;&nbsp; 1. สิ่งที่ทำหน้าที่ดำเนินกิจกรรมของระบบ หรือทำให้เกิดผลลัพธ์ต่างๆ ขึ้นในระบบ ให้ถือว่าสิ่งนั้นอยู่ในระบบ<br>&nbsp;&nbsp;&nbsp; 2. สิ่งที่ไม่ได้ทีหน้าที่ในการดำเนินกิจกรรมของระบบ แต่แสดงบทบาทเป็นผู้คาดหวังผลลัพธ์จากระบบ หรือทำหน้าที่ผลักดันให้เกิดกิจกรรมของระบบ หรอืทำหน้าที่ควบคุมดูแลกิจกรรมของระบบ ให้ถือว่าสิ่งนั้นอยู่ภายนอกระบบ<br>&nbsp;&nbsp;&nbsp; <strong>ตัวอย่าง 3.1</strong> โรงงานแห่งหนึ่งประกอบด้วยระบบการผลิต ระบบควบคุมคุณภาพ ซึ่งทำหน้าที่ในการควบคุมระบบการผลิต โดยในระบบการผลิตจะมีคนงานเป็นผู้ปฏิบัติงาน นอกจากนี้ โรงงานยังมีระบบการตลาดทำหน้าที่ขายผลิตภัณฑ์ต่างๆ ของโรงงาน โดยระบบการตลาดและระบบควบคุมคุณภาพจะมีผู้จัดการทำหน้าที่จัดการ<br>&nbsp;&nbsp;&nbsp; ผู้จัดการและคนงานทำหน้าที่ติดต่อกับระบบในฐานะผู้จัดการและผู้ดำเนินการ ถือว่า ทั้งสองอยู่ภายนอกระบบจะแสดงขอบเขตของระบบด้วยเส้นประ สิ่งที่อยู่ภายในเส้นประทั้งหมด คือ ระบบทั้งหมด จะเรียกสิ่งที่อยู่นอกขอบเขตของระบบแต่มีความสัมพันธ์ต่อระบบว่า Actor ซึ่งจะถือว่า ผู้จัดการและคนงานเป็น Actor ของระบบในโรงงานที่อยู่ภายในระบบ ประกอบด้วย 3 ระบบ ได้แก่ ระบบการผลิต ระบบควบคุมคุณภาพ ระบบการตลาด ซึ่งจะเรียกว่า Use Case
+													<br><center><img src="pic/f18.jpg"></center><br>&nbsp;&nbsp;&nbsp; Use Case จะทำหน้าที่อธิบายว่า ระบบทำงานอะไร ซึ่งตามหลักการของ OO แล้ว Use Case ถูกจัดเป็น Class ชนิดหนึ่ง สิ่งที่อยู่ภายนอกจะไม่สามารถมองเห็นรายละเอียดภายในได้ หรือเรียกได้ว่า Use Case จะมีเฉพาะ Outside View หรือ External View เท่านั้น<br>&nbsp;&nbsp;&nbsp; <strong>3.1.1 Use Case Diagram</strong><br>&nbsp;&nbsp;&nbsp; ในภาษา UML ใช้สัญลักษณ์วงรีแทน Use Case และใช้รูปคนแทน  Actor โดยทั้ง Use Case และ Actor ต้องมีชื่อที่ชัดเจน สื่อความได้ สำหรับปฏิสัมพันธ์ระหว่าง Actor และ Use Case จะใช้สัญลักษณ์ เส้นตรงมีหัวลูกศรจาก Actor ไปยัง Use Case และเรียก Diagram ที่ประกอบไปด้วย Use Case และ Actor ที่มีปฏิสัมพันธ์ต่อกันว่า Use Case Diagram
+													<br><center><img src="pic/f19.jpg"></center><br>&nbsp;&nbsp;&nbsp; <strong>3.1.2 Flow of Event และ Scenario</strong><br>&nbsp;&nbsp;&nbsp; ทุกๆ Use Case ต้องมีชื่อ ทำให้ทราบได้ว่า Use Case นั้นๆ จะมีกิจกรรมอะไรภายในบ้าง อย่างไร ด้วยชื่อของ Use Case อย่างเดียวอาจยังไม่ก่อให้เกิดความเข้าใจใน Use Case นั้นอย่างสมบูรณ์<br>&nbsp;&nbsp;&nbsp; เพื่อความเข้าใจใน Use Case แต่ละตัวอย่างถ่องแท้ เราสามารถอธิบายรายละเอียดของกิจกรรมใน Use Case แต่ละตัวในรูปแบบของภาษาเขียน ที่เรียกว่า Flow of Event เราจะเรียกแต่ละ Flow of Event ที่เป็นไปได้ทั้งหมดของ Use Case ว่า Scenario หากเปรียบ Use Case คือ  Class แล้ว Scenario จะเปรียบเสมือนเป็น Object ของ Use Case<br>&nbsp;&nbsp;&nbsp; ในการเขียน Flow of Event สิ่งที่ควรมีเสมอ คือ<br>&nbsp;&nbsp;&nbsp; 1. ลำดับกิจกรรมเมื่อ Use Case ดำเนินกิจกรรมตามปรกติเพียงหนึ่งเดียว (Main Flow of Event หรือ Main Flow)<br>&nbsp;&nbsp;&nbsp; 2. ลำดับกิจกรรมเมื่อ Use Case ดำเนินกิจกรรมผิดปรกติจำนวนเท่าใดก็ได้ (Exceptional Flow of Event หรือ Exception Flow)<br>&nbsp;&nbsp;&nbsp; 3. ใน Main Flow และ Exceptional Flow แต่ละตัว ต้องมีคำอธิบายถึงสาเหตุของการเริ่มต้นของกิจกรรม<br>&nbsp;&nbsp;&nbsp; 4. ใน Main Flow และ Exceptional Flow แต่ละตัว ต้องมีคำอธิบายถึงสาเหตุการสิ้นสุดหรือจบกิจกรรมของ Use Case
+													<br><hr width="500" size=3><br><table width="600" align="right" border="0"><tr><td align="right"><ul id="menu1">
+																										  <li  id="menu2"><a href="les3-1.html" id="menu1lia">1</a></li>
+																										  <li  id="menu2"><a href="les3-2.html" id="menu1lia">2</a></li>
+																										  <li  id="menu2"><a href="les3-3.html" id="menu1lia">3</a></li>
+																										  <li  id="menu2"><a href="les3-2.html" id="menu1lia">Next</a></li>
+																							</ul></td></tr></table>
+													</div>
+													</div></td>
+										</tr>
+										<tr><td></td></tr>
+										</table>
+ </table>
+ 
+ 
+ <!-------------------------------------------------------------------------------------------- footer ----------------------------------------------------------------------------------------->
+<br><br><br><br><br>
+<div class="cc"></div>
+<div class="ff">
+<table width="1000" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr>
+	<td width="500" height="200" valign="top" class="font2"><br>OBJECT ORIENTATION<br> Copyright &copy; 2014 All Right Reserved.</td>
+	<td width="500" height="200" valign="top" class="font2" align="right"><br>CONTACT US <br> &nbsp; Hot line : 036-364487 <br><a href="mailto:bosskung@gmail.com"><img src="pic/icon_email.png"></a>&nbsp; E-mail : bosskung@gmail.com&nbsp;<br>
+	<a href="http://www.facebook.com" target="_blank"><img src="pic/facebook-variation.png"></a>&nbsp;<a href="https://twitter.com/?lang=th" target="_blank"><img src="pic/twitter-variation.png"></a>&nbsp;<a href="http://instagram.com/" target="_blank"><img src="pic/instagram-variation.png"></a>&nbsp;<img src="pic/rss-variation.png"> &nbsp;</td>
+</tr>
+</table></div>
+
+
+
+<!--------------------------------------------------------------------------------------------  back to top ----------------------------------------------------------------------------------------->
+
+<p id="back-to-top" style="display: black; opacity;">
+<a href="#top">
+<span></span>
+</a>
+</p>
+
+
+
+
+</body>
+</html>

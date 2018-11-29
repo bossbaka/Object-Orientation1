@@ -1,0 +1,103 @@
+﻿<html>
+ <head>
+  <title>:: บทเรียน 2 ::</title>
+ 
+  <link rel="shortcut icon" href="pic/ele_fire.ico">
+<link rel="stylesheet" type="text/css" href="style.css">
+ 
+ 
+ </head>
+<body bgcolor="#f6f6f6" link="#414141" vlink="#ffffff" alink="#0033cc">
+									<div class="menu">
+									<center><table width="1000"  align="center" border="0">
+									<tr>
+											<td width="350" align="center"><img src="pic/logo1.png"></td>
+											<td width="650"><p align="right"></td>
+									</tr></div>
+									<!--------------------------------------------------------------------------------------------  Head1 --------------------------------------------------------------------------------------------->
+									<table width="1000" height="47" align="center" border="0">
+									<tr>
+											<td width="1000" align="center"><div class="font1">
+											<a href="index.html" class="hover1">หน้าหลัก</a>&nbsp; | &nbsp; 
+											<a href="les1-1.html" class="hover1">บทเรียน</a>&nbsp; | &nbsp;
+											<a href="test1-1.html" class="hover1">แบบทดสอบ</a>&nbsp; | &nbsp;
+											<a href="register.html" class="hover1">สมัครสมาชิก</a>&nbsp; | &nbsp; 
+											<a href="about.html" class="hover1">เกี่ยวกับเรา</a></div></td>
+									</tr>
+									</table>
+									</table></center><br><br>
+<table width="1000" align="center" border="0"><tr><td><p align="left"><font size="21" class="font0">บทที่ 2 Abstraction, Encapsulation และ Modularity</font></p></td></tr></table><br>
+  
+
+ <table width="1000"  align="center" border="0">
+<tr>
+<td>									
+										<table  align="left" border="0" cellspacing="0">
+										<tr>
+										<td><div class="border2"><center><h2>บทเรียน</h2></center><hr width="200"><br>
+																<ul>
+																<li><a href="les1-1.html">บทที่ 1</a></li>
+																<li><a href="les2-1.html">บทที่ 2</a></li>
+																<li><a href="les3-1.html">บทที่ 3</a></li>
+																<li><a href="les4-1.html">บทที่ 4<a/></li>
+																<li><a href="les5-1.html">บทที่ 5</a></li>
+																<li><a href="les6-1.html">บทที่ 6</a></li>
+																<li><a href="les7-1.html">บทที่ 7</a></li>
+																<li><a href="les8-1.html">บทที่ 8</a></li>
+																<li><a href="les9-1.html">บทที่ 9</a></li>
+													</ul>
+											</div></td>
+										</tr>
+										</table>
+ 
+										 <table width="690" align="right" border="0" cellspacing="0">
+										<tr>
+											<td><div id="container">
+													<div class="h1">บทที่ 2 Abstractions หน้าที่ 2</div>
+													<div class="hard_break"><strong>&nbsp;&nbsp;&nbsp; 2.2.3 กำหนด Attribute และ Method</strong><br>&nbsp;&nbsp;&nbsp; เมื่อกำหมดได้แล้วว่าสิ่งใดอยู่ใน Problem Domain แล้ว สิ่งที่ต้องทำต่อไป คือ รวบรวม Object ที่คุณสมบัติเหมือนกันไว้ในหมวดหมู่หรือ Class เดียวกัน แล้วกำหนด Attribute และ Method ของ Class เหล่านั้น<br>&nbsp;&nbsp;&nbsp; คำนามและคำวิเศษณ์ที่เป็นตัวบ่งชี้ Attribute จะทำหน้าที่ ดังนี้<br>&nbsp;&nbsp;&nbsp; - เป็นสิ่งที่กำหนด Unique Identity ของ Object ของ Class เช่น รหัสประจำตัวประชาชน เลขที่ ISBN ของหนังสือ<br>&nbsp;&nbsp;&nbsp; - เป็นสิ่งที่กำหนดคุณลักษณะต่างๆ ที่สามารถมองเห็นได้<br>&nbsp;&nbsp;&nbsp; - เป็นสิ่งที่กำหนดคุณลักษณะต่างๆ ที่ไม่สามารถมองเห็น แต่มีอยู่จริงของ Class เช่น ประเภทหนังสือ ราคาหนังสือ อัตราค่าธรรมเนียม<br>&nbsp;&nbsp;&nbsp; - เป็นสิ่งที่บอกถึงสถานะของ Class<br>&nbsp;&nbsp;&nbsp; Method จะใช้คำกริยา เป็นตัวบ่งชี้ Object ทุกตัวตามหลักของ OO เป็น Passive Object
+													<br><strong>2.3 Encapsulation และ Information Hiding</strong><br>&nbsp;&nbsp;&nbsp; Class หนึ่งๆ ประกอบด้วย Attribute และ Method ซึ่งสามารถมองเห็นในอีกมุมมองได้ว่า กลุ่มของ Attribute และ กลุ่มของ Method ถูกบรรจุไว้ในกล่องเพียงกล่องเดียว เปรียบเสมือนการนำยาหลายๆ ตัวมาผสมกันแล้วบรรจุลงไว้ในแคปซูลในความเป็นจริงแล้ว Capsule ไม่ได้ใส เราไม่สามารถรู้ได้ว่าภายใน Capsule ประกอบด้วยตัวยาอะไรบ้าง<br>&nbsp;&nbsp;&nbsp; Encapsulation คือ กระบวนการในการซ่อนรายละเอียดของคุณลักษณะต่างๆและรายละเอียดของการทำงานของ Class โดยสิ่งต่างๆ ภายนอก Class จะติดต่อกับ Class ได้ ต้องติดต่อผ่านช่องทางที่ Class เตรียมไว้ให้เท่านั้น เรียกว่า Public Interface<br>&nbsp;&nbsp;&nbsp; หลักการ คือ การมอง Class จากภายใน จะเห็นรายละเอียดของ Class ทั้งหมด และการมอง Class จากภายนอก จะเห็นรายละเอียดเท่าที่ Class เปิดเผยเท่านั้น Information Hiding หมายถึงการซ่อนรายละเอียดของ Attribute และ Method ของ Class จากภายนอก<br><strong>&nbsp;&nbsp;&nbsp; 2.3.1 Visibility</strong><br>&nbsp;&nbsp;&nbsp; Information Hiding ของ Class มีหลายระดับ แตกต่างกันออกไป บางรายละเอียดอาจเปิดเผยให้ภายนอกมองเห็นและใช้งานได้โดยตรง แต่บางอย่างอาจต้องการการปกปิดไม่ยอมให้ภายนอกเห็น<br>&nbsp;&nbsp;&nbsp; เราจะเรียกระดับการมองเห็นแบบนี้ ว่า Visibility แบ่งออกเป็น 3 ระดับ<br>&nbsp;&nbsp;&nbsp; 1. Private จะไม่ถูกเปิดเผยแก่ภายนอกและไม่สามารถเข้าถึงโดยตรงจากภายนอก<br>&nbsp;&nbsp;&nbsp; 2. Protected จะไม่ถูกเปิดเผยแก่ภายนอกและไม่สามารถเข้าได้โดยตรงจากภายนอก แต่สามารถเข้าถึงได้จากภายในตัว Class เอง จะถูกถ่ายทอดให้กับ Subclass และสามารถเข้าถึงได้จากภายใน Subclass<br>&nbsp;&nbsp;&nbsp; 3. Public จะถูกเปิดเผยและถูกเข้าถึงได้โดยตรงจากภายนอก ไม่มีการปกปิดใดๆ<br>&nbsp;&nbsp;&nbsp; <strong>2.3.2 การจำลองภาพของ Class ด้วย UML</strong><br>&nbsp;&nbsp;&nbsp; <strong>- ต้องจำลอง Visibility ของ Attribute/Method ของ Class เสมอ</strong><br>&nbsp;&nbsp;&nbsp;   UML กำหนดให้ใช้เครื่องหมายลบ (-) แทน Visibility private<br>&nbsp;&nbsp;&nbsp;   เครื่องหมายชาร์ป (#) แทน Visibility protected<br>&nbsp;&nbsp;&nbsp;   เครื่องหมายบวก (+) แทน Visibility public
+													<br><center><img src="pic/f3.jpg"></center><br>&nbsp;&nbsp;&nbsp; <strong>- การอธิบายรายละเอียดของ Attributes และ Methods</strong><br>&nbsp;&nbsp;&nbsp; Method ที่ไม่มีการส่งค่าคืน คือ Method ที่เมื่อดำเนินการใดๆ แล้ว จะไม่มีการส่งผลลัพธ์ (Return) ออกสู่ภายนอก<br>&nbsp;&nbsp;&nbsp; Method ที่มีการส่งค่าคืน คือ Method ที่เมื่อดำเนินการใดๆ แล้ว จะส่งผลลัพธ์กลับคืนสู่ภายนอก  โดยจะเรียกค่าที่ Return ออกจาก Method ว่า Method Signature เรียกสั้นๆ ว่า Signature<br>&nbsp;&nbsp;&nbsp; <strong>- หลักนิยมในการตั้งชื่อ Class, Attribute และ Method</strong><br>&nbsp;&nbsp;&nbsp; 1. ต้องเป็นชื่อที่สื่อความได้ และตรงกับความหมายของ Class, Attribute Method เช่น MemberCard<br>&nbsp;&nbsp;&nbsp; 2. ชื่อ Class ควรขึ้นต้นด้วยตัวอักษรภาษาอังกฤษตัวใหญ่<br>&nbsp;&nbsp;&nbsp; 3. ชื่อ Method หรือ Attribute ควรขึ้นต้นด้วยตัวอักษรภาษาอังกฤษตัวเล็ก<br>&nbsp;&nbsp;&nbsp; 4. ชื่อ Method ที่ใช้ควรกำหนดค่าของ Attribute ควรใช้คำว่า set นำหน้าชื่อ Method<br>&nbsp;&nbsp;&nbsp; 5. ชื่อ Method ที่ใช้อ่านค่าของ Attribute ควรใช้คำว่า get นำหน้าชื่อ Method<br>&nbsp;&nbsp;&nbsp; การตั้งชื่อ Class Attribute และ Methods ที่สอดคล้องกับหลักการด้านบน มีข้อดี คือ สามารถเดาโครงสร้างของ Class ได้<br>&nbsp;&nbsp;&nbsp Classification Abstraction เป็นกระบวนการสร้าง Class จาก Object ต่างๆ ที่มีอยู่ใน Problem Domain ที่เราให้ความสนใจ ทำให้ผู้พัฒนาระบบได้ Class พื้นฐานจากกระบวนการนี้ แต่สิ่งที่ยังไม่มีคือ ความสัมพันธ์ของ Class พื้นฐานเหล่านั้น
+													<br><hr width="500" size=3><br><table width="600" align="right" border="0"><tr><td align="right"><ul id="menu1">
+																										  <li id="menu2"><a href="les2-1.html" id="menu1lia">Previous</a></li>
+																										  <li  id="menu2"><a href="les2-1.html" id="menu1lia">1</a></li>
+																										  <li  id="menu2"><a href="les2-2.html" id="menu1lia">2</a></li>
+																										  <li  id="menu2"><a href="les2-3.html" id="menu1lia">3</a></li>
+																										  <li  id="menu2"><a href="les2-4.html" id="menu1lia">4</a></li>
+																										  <li  id="menu2"><a href="les2-5.html" id="menu1lia">5</a></li>
+																										  <li  id="menu2"><a href="les2-3.html" id="menu1lia">Next</a></li>
+																										  </ul></td></tr></table>
+													</div>
+													</div></td>
+										</tr>
+										<tr><td></td></tr>
+										</table>
+ </table>
+ 
+ 
+ <!-------------------------------------------------------------------------------------------- footer ----------------------------------------------------------------------------------------->
+<br><br><br><br><br>
+<div class="cc"></div>
+<div class="ff">
+<table width="1000" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr>
+	<td width="500" height="200" valign="top" class="font2"><br>OBJECT ORIENTATION<br> Copyright &copy; 2014 All Right Reserved.</td>
+	<td width="500" height="200" valign="top" class="font2" align="right"><br>CONTACT US <br> &nbsp; Hot line : 036-364487 <br><a href="mailto:bosskung@gmail.com"><img src="pic/icon_email.png"></a>&nbsp; E-mail : bosskung@gmail.com&nbsp;<br>
+	<a href="http://www.facebook.com" target="_blank"><img src="pic/facebook-variation.png"></a>&nbsp;<a href="https://twitter.com/?lang=th" target="_blank"><img src="pic/twitter-variation.png"></a>&nbsp;<a href="http://instagram.com/" target="_blank"><img src="pic/instagram-variation.png"></a>&nbsp;<img src="pic/rss-variation.png"> &nbsp;</td>
+</tr>
+</table></div>
+
+
+
+<!--------------------------------------------------------------------------------------------  back to top ----------------------------------------------------------------------------------------->
+
+<p id="back-to-top" style="display: black; opacity;">
+<a href="#top">
+<span></span>
+</a>
+</p>
+
+
+
+
+</body>
+</html>

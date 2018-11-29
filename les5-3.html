@@ -1,0 +1,100 @@
+﻿<html>
+ <head>
+  <title>:: บทเรียน 5 ::</title>
+ 
+  <link rel="shortcut icon" href="pic/ele_fire.ico">
+<link rel="stylesheet" type="text/css" href="style.css">
+ 
+ 
+ </head>
+<body bgcolor="#f6f6f6" link="#414141" vlink="#ffffff" alink="#0033cc">
+									<div class="menu">
+									<center><table width="1000"  align="center" border="0">
+									<tr>
+											<td width="350" align="center"><img src="pic/logo1.png"></td>
+											<td width="650"><p align="right"></td>
+									</tr></div>
+									<!--------------------------------------------------------------------------------------------  Head1 --------------------------------------------------------------------------------------------->
+									<table width="1000" height="47" align="center" border="0">
+									<tr>
+											<td width="1000" align="center"><div class="font1">
+											<a href="index.html" class="hover1">หน้าหลัก</a>&nbsp; | &nbsp; 
+											<a href="les1-1.html" class="hover1">บทเรียน</a>&nbsp; | &nbsp;
+											<a href="test1-1.html" class="hover1">แบบทดสอบ</a>&nbsp; | &nbsp;
+											<a href="register.html" class="hover1">สมัครสมาชิก</a>&nbsp; | &nbsp; 
+											<a href="about.html" class="hover1">เกี่ยวกับเรา</a></div></td>
+									</tr>
+									</table>
+									</table></center><br><br>
+<table width="1000" align="center" border="0"><tr><td><p align="left"><font size="21" class="font0">บทที่ 5 Interaction Modeling</font></p></td></tr></table><br>
+  
+
+ <table width="1000"  align="center" border="0">
+<tr>
+<td>									
+										<table  align="left" border="0" cellspacing="0">
+										<tr>
+										<td><div class="border2"><center><h2>บทเรียน</h2></center><hr width="200"><br>
+																<ul>
+																<li><a href="les1-1.html">บทที่ 1</a></li>
+																<li><a href="les2-1.html">บทที่ 2</a></li>
+																<li><a href="les3-1.html">บทที่ 3</a></li>
+																<li><a href="les4-1.html">บทที่ 4<a/></li>
+																<li><a href="les5-1.html">บทที่ 5</a></li>
+																<li><a href="les6-1.html">บทที่ 6</a></li>
+																<li><a href="les7-1.html">บทที่ 7</a></li>
+																<li><a href="les8-1.html">บทที่ 8</a></li>
+																<li><a href="les9-1.html">บทที่ 9</a></li>
+													</ul>
+											</div></td>
+										</tr>
+										</table>
+ 
+										 <table width="690" align="right" border="0" cellspacing="0">
+										<tr>
+											<td><div id="container">
+													<div class="h1">บทที่ 5 Interaction Modeling หน้าที่ 3</div>
+													<div class="hard_break">&nbsp;&nbsp;&nbsp; <strong>ตัวอย่าง 5.2 Use Case Diagram</strong>
+													<br><center><img src="pic/f34.jpg"></center><br><center><img src="pic/f35.jpg"></center><br>&nbsp;&nbsp;&nbsp;<strong>- Use Case  “Buying Book”</strong>
+													<br><center><img src="pic/f36.jpg"></center><br>&nbsp;&nbsp;&nbsp; <strong>อธิบาย</strong><br>&nbsp;&nbsp;&nbsp; 1. ลูกค้าแจ้งความจำนงแก่เจ้าหน้าที่ว่า ต้องการซื้อหนังสือ โดยส่ง Message Notify Buy<br>&nbsp;&nbsp;&nbsp; 2. Officer ส่ง Create Message เพื่อสร้างรายการขายหนังสือ<br>&nbsp;&nbsp;&nbsp; 3. Officer ดำเนินการหาหนังสือที่ Customer ต้องการ โดยส่ง Message lookup ไปยัง book ซึ่งเป็น Object ของ Class Book เพื่อหาหนังสือเล่มที่ต้องการ ผลลัพธ์จะอยู่ในรูปของ รหัสหนังสือ ซึ่งได้ถูกส่งมายัง Officer ด้วย Return Message<br>&nbsp;&nbsp;&nbsp; 4. หากผลลัพธ์ในข้อ 3 ประสบผลสำเร็จ รหัสหนังสือ ที่จะถูกขายไปใน BuyingTransaction จะถูกระบุโดย Call Message setBookId ที่ถูกส่งมาโดย Officer<br>&nbsp;&nbsp;&nbsp; 5. Officer กำหนดมูลค่าของการขาย โดยการส่ง Call Message setPrice ไปยัง Buyingtransaction<br>&nbsp;&nbsp;&nbsp; 6. ลูกค้าจะจ่ายเงินและปิดการขายครั้งนั้น โดยการส่ง Call Message proceed ไปยัง BuyingTransaction<br>&nbsp;&nbsp;&nbsp; 7. กระบวนการที่ 2 – 6 จะเกิดขึ้นซ้ำๆ เท่ากับจำนวนหนังสือที่ถูกเลือกซื้อโดยลูกค้า
+													<br><hr width="500" size=3><br><table width="600" align="right" border="0"><tr><td align="right"><ul id="menu1">
+																										  <li id="menu2"><a href="les5-2.html" id="menu1lia">Previous</a></li>
+																										  <li  id="menu2"><a href="les5-1.html" id="menu1lia">1</a></li>
+																										  <li  id="menu2"><a href="les5-2.html" id="menu1lia">2</a></li>
+																										  <li  id="menu2"><a href="les5-3.html" id="menu1lia">3</a></li>
+																										  </ul></td></tr></table>
+													</div>
+													</div></td>
+										</tr>
+										<tr><td></td></tr>
+										</table>
+ </table>
+ 
+ 
+ <!-------------------------------------------------------------------------------------------- footer ----------------------------------------------------------------------------------------->
+<br><br><br><br><br>
+<div class="cc"></div>
+<div class="ff">
+<table width="1000" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr>
+	<td width="500" height="200" valign="top" class="font2"><br>OBJECT ORIENTATION<br> Copyright &copy; 2014 All Right Reserved.</td>
+	<td width="500" height="200" valign="top" class="font2" align="right"><br>CONTACT US <br> &nbsp; Hot line : 036-364487 <br><a href="mailto:bosskung@gmail.com"><img src="pic/icon_email.png"></a>&nbsp; E-mail : bosskung@gmail.com&nbsp;<br>
+	<a href="http://www.facebook.com" target="_blank"><img src="pic/facebook-variation.png"></a>&nbsp;<a href="https://twitter.com/?lang=th" target="_blank"><img src="pic/twitter-variation.png"></a>&nbsp;<a href="http://instagram.com/" target="_blank"><img src="pic/instagram-variation.png"></a>&nbsp;<img src="pic/rss-variation.png"> &nbsp;</td>
+</tr>
+</table></div>
+
+
+
+<!--------------------------------------------------------------------------------------------  back to top ----------------------------------------------------------------------------------------->
+
+<p id="back-to-top" style="display: black; opacity;">
+<a href="#top">
+<span></span>
+</a>
+</p>
+
+
+
+
+</body>
+</html>

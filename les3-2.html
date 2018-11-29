@@ -1,0 +1,102 @@
+﻿<html>
+ <head>
+  <title>:: บทเรียน 3 ::</title>
+ 
+  <link rel="shortcut icon" href="pic/ele_fire.ico">
+<link rel="stylesheet" type="text/css" href="style.css">
+ 
+ 
+ </head>
+<body bgcolor="#f6f6f6" link="#414141" vlink="#ffffff" alink="#0033cc">
+									<div class="menu">
+									<center><table width="1000"  align="center" border="0">
+									<tr>
+											<td width="350" align="center"><img src="pic/logo1.png"></td>
+											<td width="650"><p align="right"></td>
+									</tr></div>
+									<!--------------------------------------------------------------------------------------------  Head1 --------------------------------------------------------------------------------------------->
+									<table width="1000" height="47" align="center" border="0">
+									<tr>
+											<td width="1000" align="center"><div class="font1">
+											<a href="index.html" class="hover1">หน้าหลัก</a>&nbsp; | &nbsp; 
+											<a href="les1-1.html" class="hover1">บทเรียน</a>&nbsp; | &nbsp;
+											<a href="test1-1.html" class="hover1">แบบทดสอบ</a>&nbsp; | &nbsp;
+											<a href="register.html" class="hover1">สมัครสมาชิก</a>&nbsp; | &nbsp; 
+											<a href="about.html" class="hover1">เกี่ยวกับเรา</a></div></td>
+									</tr>
+									</table>
+									</table></center><br><br>
+<table width="1000" align="center" border="0"><tr><td><p align="left"><font size="21" class="font0">บทที่ 3 Use Case Modeling</font></p></td></tr></table><br>
+  
+
+ <table width="1000"  align="center" border="0">
+<tr>
+<td>									
+										<table  align="left" border="0" cellspacing="0">
+										<tr>
+										<td><div class="border2"><center><h2>บทเรียน</h2></center><hr width="200"><br>
+																<ul>
+																<li><a href="les1-1.html">บทที่ 1</a></li>
+																<li><a href="les2-1.html">บทที่ 2</a></li>
+																<li><a href="les3-1.html">บทที่ 3</a></li>
+																<li><a href="les4-1.html">บทที่ 4<a/></li>
+																<li><a href="les5-1.html">บทที่ 5</a></li>
+																<li><a href="les6-1.html">บทที่ 6</a></li>
+																<li><a href="les7-1.html">บทที่ 7</a></li>
+																<li><a href="les8-1.html">บทที่ 8</a></li>
+																<li><a href="les9-1.html">บทที่ 9</a></li>
+													</ul>
+											</div></td>
+										</tr>
+										</table>
+ 
+										 <table width="690" align="right" border="0" cellspacing="0">
+										<tr>
+											<td><div id="container">
+													<div class="h1">บทที่ 3 Use Case Modeling หน้าที่ 2</div>
+													<div class="hard_break"><strong>3.2 ความสัมพันธ์ใน Use Case Diagram</strong><br>&nbsp;&nbsp;&nbsp; แต่ละ Use Case ภายใน Use Case Diagram สามารถมีความสัมพันธ์กันได้ จำแนกออกเป็น 3 ประเภท ได้แก่<br>&nbsp;&nbsp;&nbsp; <strong>3.2.1 Generalization/Specialization</strong><br>&nbsp;&nbsp;&nbsp; ระหว่าง Use Case จะมีคุณสมบัติไม่แตกต่างจาก Class ซึ่ง Use Case ที่ถูก Inherit จะเรียกว่า Parent Use Case ส่วน Use Case ที่ Inherit คุณสมบัติจาก Use Case อื่น จะเรียกว่า Child Use Case ซึ่งจะคล้ายกับ Superclass และ subclass Child Use Case อาจมีคุณสมบัติ Polymorphism คือ Child Use Case อาจมีกิจกรรมภายในที่แตกต่างหรือดัดแปลงกิจกรรมภายในของ Use Case ได้<br>&nbsp;&nbsp;&nbsp; เราจะใช้ Generalization/Specialization ในกรณีที่ต้องการแสดงความสัมพันธ์ในการจำแนกประเภทของ Use Case เช่น การตรวจสอบความถูกต้องของผู้ใช้ระบบ สามารถทำได้หลายวิธี ได้แก่ การตรวจสอบจาก Password และการตรวจสอบจากลายนิ้วมือ<br>&nbsp;&nbsp;&nbsp; ใน UML จะใช้เส้นตรงมีหัวศรสามเหลี่ยมใสเป็นสัญลักษณ์
+													<br><center><img src="pic/f20.jpg"></center><br>&nbsp;&nbsp;&nbsp; <strong>3.2.2 Include</strong><br>&nbsp;&nbsp;&nbsp; เป็นความสัมพันธ์ของ Use Case ที่พบบ่อย ความสัมพันธ์ในกรณีที่ Use Case หนึ่งไปเรียกใช้หรือดึงเอากิจกรรมของอีก Use Case หนึ่ง เพื่อให้กิจกรรมนั้นเกิดขึ้นจริงในตนเอง สรุปคือ กิจกรรมใน Use Case หนึ่ง อาจจะถูกผนวกเข้าไปรวมกับกิจกรรมของอีก Use Case หนึ่ง เรียกความสัมพันธ์นี้ว่า Include โดย Use Case ที่ทำหน้าที่ดึงกิจกรรมมาจาก Use Case อื่น เรียกว่า Base Use Case ส่วน Use Case ที่ถูกเรียกใช้หรือถูกดึงกิจกรรม เรียกว่า Include Use Case<br>&nbsp;&nbsp;&nbsp; ใน UML จะใช้ลูกศรที่มี Sterotype เป็น <<  >> ลากจาก Base ไปยัง Included
+													<br><center><img src="pic/f21.jpg"></center><br>&nbsp;&nbsp;&nbsp; ความสัมพันธ์ระหว่าง Use Case แบบ Include เป็นการสนับสนุนการนำกลับมาใช้ใหม่ของ Use Case คือ Use Case หนึ่งสามารถถูก Include ได้โดย Base Use Caseหลายๆ ตัวและสามารถถูก Include ได้มากกว่าหนึ่งครั้ง<br>&nbsp;&nbsp;&nbsp; <strong>3.2.3 Extends</strong><br>&nbsp;&nbsp;&nbsp; ความสัมพันธ์ระหว่าง Use Case อีกลักษณะหนึ่ง ที่สามารถเกิดขึ้นในกรณีที่บาง Use Case ดำเนินกิจกรรมของตนเองไปตามปรกติ แต่อาจมีเงื่อนไขหรือสิ่งกระตุ้นบางอย่าง ที่ส่งผลให้กิจกรรมตามปรกติของ Use Case นั้น ถูกรบกวนจนเบี่ยงเบนไป สามารถแสดงเงื่อนไขหรือสิ่งกระตุ้นเหล่านี้ได้ในรูปของ Use Case เรียกความสัมพันธ์นี้ว่า Extends เรียก Use Case ที่ถูกรบกวนหรือถูกกระตุ้นว่า Base Use Case เรียก Use Case ที่ทำหน้าที่รบกวนหรือกระตุ้นว่า Extending Use Case<br>&nbsp;&nbsp;&nbsp; เราจะใช้ความสัมพันธ์แบบ Extends เพื่อแสดงให้เห็นถึงระบบที่มีเหตุการณ์หลัก (Mandatory Events) และยังมีเหตุการณ์ทางเลือกอื่นๆ ที่สามารถเกิดขึ้นได้ (Optional Events) เหตุการณ์หลักควรมีได้เพียงหนึ่งเดียว ในขณะที่เหตุการณ์ทางเลือกอาจมีได้มากกว่าหนึ่งก็ได้<br>&nbsp;&nbsp;&nbsp; ใน UML จะใช้สัญลักษณ์ลูกศรที่มี stereotype เป็น < extends > ลากจาก Extending Use Case ไปยัง Base Use Case เพื่อแสดงความสัมพันธ์<br>&nbsp;&nbsp;&nbsp; <strong>3.2.4 Use Case Realization</strong><br>&nbsp;&nbsp;&nbsp; จุดมุ่งหมายของ Use Case คือ  อธิบายว่าระบบทำงานอะไร ไม่ใช่ระบบทำงานอย่างไร ในบางกรณี Use Case อาจมีทางเลือกของเหตุการณ์ที่หลากหลายแตกต่างกัน แต่ได้ผลลัพธ์แบบเดียวกัน เช่น การตรวจสอบผู้เข้าใช้งานระบบ อาจกระทำได้หลายวิธี เช่น ระบบ ATM ต้องระบุเลยว่า ต้องตรวจสอบผู้ใช้งานโดยการตรวจสอบ Pin Code เป็นรหัส 4 หลัก<br>&nbsp;&nbsp;&nbsp; เราจะถึอว่า การตรวจสอบด้วย Pin Code ไม่ใช่ Use Case แต่จะถือเป็น Collaboration (การร่วมมือกัน) ของ Use Case “Validate” เนื่องจาก Check Pin Code ทำหน้าที่อธิบายรายละเอียดของ Use Case “Validate User” เรียกความสัมพันธ์นี้ว่า Realization<br>&nbsp;&nbsp;&nbsp; ใน UML ใช้สัญลักษณ์คือ เส้นตรงที่มีหัวศร และมี stereotype เป็น < realize > ลากจาก Class ที่ยัง Collaboration UML จะใช้วงรีที่มีชื่อ และเส้นขอบเป็นเส้นประแทน Collaboration
+													<br><center><img src="pic/f22.jpg"></center>
+														<br><hr width="500" size=3><br><table width="600" align="right" border="0"><tr><td align="right"><ul id="menu1">
+																										  <li id="menu2"><a href="les3-1.html" id="menu1lia">Previous</a></li>
+																										  <li  id="menu2"><a href="les3-1.html" id="menu1lia">1</a></li>
+																										  <li  id="menu2"><a href="les3-2.html" id="menu1lia">2</a></li>
+																										  <li  id="menu2"><a href="les3-3.html" id="menu1lia">3</a></li>
+																										  <li  id="menu2"><a href="les3-3.html" id="menu1lia">Next</a></li>
+																							</ul></td></tr></table>
+													</div>
+													</div></td>
+										</tr>
+										<tr><td></td></tr>
+										</table>
+ </table>
+ 
+
+ <!-------------------------------------------------------------------------------------------- footer ----------------------------------------------------------------------------------------->
+<br><br><br><br><br>
+<div class="cc"></div>
+<div class="ff">
+<table width="1000" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr>
+	<td width="500" height="200" valign="top" class="font2"><br>OBJECT ORIENTATION<br> Copyright &copy; 2014 All Right Reserved.</td>
+	<td width="500" height="200" valign="top" class="font2" align="right"><br>CONTACT US <br> &nbsp; Hot line : 036-364487 <br><a href="mailto:bosskung@gmail.com"><img src="pic/icon_email.png"></a>&nbsp; E-mail : bosskung@gmail.com&nbsp;<br>
+	<a href="http://www.facebook.com" target="_blank"><img src="pic/facebook-variation.png"></a>&nbsp;<a href="https://twitter.com/?lang=th" target="_blank"><img src="pic/twitter-variation.png"></a>&nbsp;<a href="http://instagram.com/" target="_blank"><img src="pic/instagram-variation.png"></a>&nbsp;<img src="pic/rss-variation.png"> &nbsp;</td>
+</tr>
+</table></div>
+
+
+
+<!--------------------------------------------------------------------------------------------  back to top ----------------------------------------------------------------------------------------->
+
+<p id="back-to-top" style="display: black; opacity;">
+<a href="#top">
+<span></span>
+</a>
+</p>
+
+
+
+
+</body>
+</html>

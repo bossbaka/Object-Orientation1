@@ -1,0 +1,100 @@
+﻿<html>
+ <head>
+  <title>:: บทเรียน 3 ::</title>
+ 
+  <link rel="shortcut icon" href="pic/ele_fire.ico">
+<link rel="stylesheet" type="text/css" href="style.css">
+ 
+ 
+ </head>
+<body bgcolor="#f6f6f6" link="#414141" vlink="#ffffff" alink="#0033cc">
+									<div class="menu">
+									<center><table width="1000"  align="center" border="0">
+									<tr>
+											<td width="350" align="center"><img src="pic/logo1.png"></td>
+											<td width="650"><p align="right"></td>
+									</tr></div>
+									<!--------------------------------------------------------------------------------------------  Head1 --------------------------------------------------------------------------------------------->
+									<table width="1000" height="47" align="center" border="0">
+									<tr>
+											<td width="1000" align="center"><div class="font1">
+											<a href="index.html" class="hover1">หน้าหลัก</a>&nbsp; | &nbsp; 
+											<a href="les1-1.html" class="hover1">บทเรียน</a>&nbsp; | &nbsp;
+											<a href="test1-1.html" class="hover1">แบบทดสอบ</a>&nbsp; | &nbsp;
+											<a href="register.html" class="hover1">สมัครสมาชิก</a>&nbsp; | &nbsp; 
+											<a href="about.html" class="hover1">เกี่ยวกับเรา</a></div></td>
+									</tr>
+									</table>
+									</table></center><br><br>
+<table width="1000" align="center" border="0"><tr><td><p align="left"><font size="21" class="font0">บทที่ 3 Use Case Modeling</font></p></td></tr></table><br>
+  
+
+ <table width="1000"  align="center" border="0">
+<tr>
+<td>									
+										<table  align="left" border="0" cellspacing="0">
+										<tr>
+										<td><div class="border2"><center><h2>บทเรียน</h2></center><hr width="200"><br>
+																<ul>
+																<li><a href="les1-1.html">บทที่ 1</a></li>
+																<li><a href="les2-1.html">บทที่ 2</a></li>
+																<li><a href="les3-1.html">บทที่ 3</a></li>
+																<li><a href="les4-1.html">บทที่ 4<a/></li>
+																<li><a href="les5-1.html">บทที่ 5</a></li>
+																<li><a href="les6-1.html">บทที่ 6</a></li>
+																<li><a href="les7-1.html">บทที่ 7</a></li>
+																<li><a href="les8-1.html">บทที่ 8</a></li>
+																<li><a href="les9-1.html">บทที่ 9</a></li>
+													</ul>
+											</div></td>
+										</tr>
+										</table>
+ 
+										 <table width="690" align="right" border="0" cellspacing="0">
+										<tr>
+											<td><div id="container">
+													<div class="h1">บทที่ 3 Use Case Modeling หน้าที่ 3</div>
+													<div class="hard_break"><strong>3.3 การใช้ Use Case เพื่อการวิเคราะห์ระบบ</strong><br>&nbsp;&nbsp;&nbsp; การวิเคราะห์ระบบสิ่งแรกที่ต้องดำเนินการคือ การอธิบายภาพรวมของระบบโดยการวางขอบเขตของระบบการพิจารณาหาผู้มีส่วนเกี่ยวข้องกับระบบ (actor) การพิจารณาหาระบบย่อยต่างๆ (Use Cases) ที่ควรมีในระบบ การหาความสัมพันธ์ระหว่าง Use Case กับ Actor หรือ Use Case ด้วยกันเอง หรือ Actor ด้วยกันเอง<br>&nbsp;&nbsp;&nbsp; การสร้าง Use Case Diagram มีขั้นตอนต่างๆแบ่งเป็น 2 แนวทาง การสร้าง System Context Model และ System Requirement Model<br>&nbsp;&nbsp;&nbsp; <strong>3.3.1 การสร้าง System Context Model</strong><br>&nbsp;&nbsp;&nbsp; เป็นการวิเคราะห์หาขอบเขตของ Model การวิเคราะห์เพื่อหา Actor และ Use Case ที่ควรมีในระบบ มีขั้นตอนดังนี้<br>&nbsp;&nbsp;&nbsp; 1. หา Actor ทั้งหมดที่ควรมี ซึ่งอยู่ภายนอกขอบเขตของระบบ<br>&nbsp;&nbsp;&nbsp; 2. ค้นหาและจำลองความสัมพันธ์เชิง Generalization/Specialization  ของ actor (ถ้ามี)<br>&nbsp;&nbsp;&nbsp; 3. หา Use Case ที่มีความสัมพันธ์กับ Actor <br>&nbsp;&nbsp;&nbsp; 4. ต้องไม่มี Actor ตัวใดที่ไม่มีความสัมพันธ์กับ Use Case ยกเว้น actor ที่เป็น subclass<br>&nbsp;&nbsp;&nbsp; 5. ต้องไม่มี Use Case ตัวใดที่ไม่มีความสัมพันธ์กับ Actor ตัวใด<br>&nbsp;&nbsp;&nbsp; <strong>3.3.2 System Requirement Model</strong><br>&nbsp;&nbsp;&nbsp; จะเกี่ยวข้องกับการพิจารณาถึงงานหรือหน้าที่ที่ระบบควรต้องทำและความสัมพันธ์ระหว่าง Use Case โดยพิจารณาจากมุมมองของ actor<br>&nbsp;&nbsp;&nbsp; 1. สร้าง System Context Model<br>&nbsp;&nbsp;&nbsp; 2. ค้นหาและจำลองระหว่าง Use Case ที่อยู่ในรูปของ Context Model ที่เรียกว่า Drafted Requirement Model<br>&nbsp;&nbsp;&nbsp; 3. เพิ่มเติม Use Case ใหม่ๆ เข้าไปยัง Drafted ที่มีอยู่<br>&nbsp;&nbsp;&nbsp; 4. หากมีความจำเป็นต้องอธิบายหรือระบุความจำเพาะเจาะจงของ Use Case สามารถใช้ Realization เพื่อสร้าง Collaboration<br>&nbsp;&nbsp;&nbsp; 5.ต้องไม่มี Actor ตัวใดที่ไม่มีความสัมพันธ์กับ Use Case ยกเว้น actor ที่เป็น subclass<br>&nbsp;&nbsp;&nbsp; 6. ต้องไม่มี Use Case ตัวใดที่ไม่มีความสัมพันธ์กับ Actor ตัวใด
+													<br><strong>3.4 กรณีศึกษา Book Store Service System</strong><br>&nbsp;&nbsp;&nbsp; บริการหลักของระบบ คือ การให้บริการยืมหนังสือและขายหนังสือให้แก่ลูกค้า โดยลูกค้าแบ่งออกเป็น 2 ประเภท คือ สมาชิกและลูกค้าทั่วไป โดยสมาชิกซื้อและยืมหนังสือได้ แต่ลูกค้าทั่วไปจะยืมไม่ได้ หนังสือแต่ละเล่มจะมีกำหนดเวลายืมที่แน่นอน หากสมาชิกยืมหนังสือเกินเวลา จะต้องจ่ายค่าปรับ หนังสือแต่ละเล่มจะมีกำหนดเวลาในการยืมและอัตราค่าปรับที่แต่ต่างตามประเภทหนังสือ เป็นหน้าที่ของพนักงานให้บริการคำนวณค่าปรับ ระบบต้องสามารถจัดการการซื้อหนังสือ โดยแบ่งหนังสือออกเป็น 2 ประเภท คือ หนังสือในประเทศและหนังสือจากต่างประเทศ<br>&nbsp;&nbsp;&nbsp; <strong>3.4.1 System Context Model</strong> <br>&nbsp;&nbsp;&nbsp; 1. Actor ของระบบ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - ลูกค้า จำแนกเป็น ลูกค้าทั่วไป และสมาชิก<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - พนักงานบริการ<br>&nbsp;&nbsp;&nbsp; 2. Use Case ที่สัมพันธ์โดยตรงกับ Customer<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - การซื้อหนังสือ<br>&nbsp;&nbsp;&nbsp; 3. Use Case ที่สัมพันธ์โดยตรงกับ Member<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - การยืมหนังสือ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - การคืนหนังสือ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - การจ่ายค่าปรับ<br>&nbsp;&nbsp;&nbsp; 4. Use Case ที่สัมพันธ์โดยตรงกับ Officer<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - การคำนวณค่าปรับ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - การสั่งซื้อหนังสือ
+													<br><center><img src="pic/f23.jpg"></center><br>&nbsp;&nbsp;&nbsp; <strong>3.4.2 System Requirement Model</strong><br>&nbsp;&nbsp;&nbsp; 1. เพิ่มความสัมพันธ์ระหว่าง Use Case ใน System Context Model<br>&nbsp;&nbsp;&nbsp; 2. เพิ่มเติม Child Use Case<br>&nbsp;&nbsp;&nbsp; 3. เพิ่มเติม Extending Use Case
+													<br><hr width="500" size=3><br><table width="600" align="right" border="0"><tr><td align="right"><ul id="menu1">
+																										  <li id="menu2"><a href="les3-2.html" id="menu1lia">Previous</a></li>
+																										  <li  id="menu2"><a href="les3-1.html" id="menu1lia">1</a></li>
+																										  <li  id="menu2"><a href="les3-2.html" id="menu1lia">2</a></li>
+																										  <li  id="menu2"><a href="les3-3.html" id="menu1lia">3</a></li>
+																										  </ul></td></tr></table>
+													</div>
+													</div></td>
+										</tr>
+										<tr><td></td></tr>
+										</table>
+ </table>
+ 
+ 
+ <!-------------------------------------------------------------------------------------------- footer ----------------------------------------------------------------------------------------->
+<br><br><br><br><br>
+<div class="cc"></div>
+<div class="ff">
+<table width="1000" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr>
+	<td width="500" height="200" valign="top" class="font2"><br>OBJECT ORIENTATION<br> Copyright &copy; 2014 All Right Reserved.</td>
+	<td width="500" height="200" valign="top" class="font2" align="right"><br>CONTACT US <br> &nbsp; Hot line : 036-364487 <br><a href="mailto:bosskung@gmail.com"><img src="pic/icon_email.png"></a>&nbsp; E-mail : bosskung@gmail.com&nbsp;<br>
+	<a href="http://www.facebook.com" target="_blank"><img src="pic/facebook-variation.png"></a>&nbsp;<a href="https://twitter.com/?lang=th" target="_blank"><img src="pic/twitter-variation.png"></a>&nbsp;<a href="http://instagram.com/" target="_blank"><img src="pic/instagram-variation.png"></a>&nbsp;<img src="pic/rss-variation.png"> &nbsp;</td>
+</tr>
+</table></div>
+
+
+
+<!--------------------------------------------------------------------------------------------  back to top ----------------------------------------------------------------------------------------->
+
+<p id="back-to-top" style="display: black; opacity;">
+<a href="#top">
+<span></span>
+</a>
+</p>
+
+
+
+
+</body>
+</html>

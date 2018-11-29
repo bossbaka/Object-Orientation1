@@ -1,0 +1,106 @@
+﻿<html>
+ <head>
+  <title>:: บทเรียน 2 ::</title>
+ 
+  <link rel="shortcut icon" href="pic/ele_fire.ico">
+<link rel="stylesheet" type="text/css" href="style.css">
+ 
+ 
+ </head>
+<body bgcolor="#f6f6f6" link="#414141" vlink="#ffffff" alink="#0033cc">
+									<div class="menu">
+									<center><table width="1000"  align="center" border="0">
+									<tr>
+											<td width="350" align="center"><img src="pic/logo1.png"></td>
+											<td width="650"><p align="right"></td>
+									</tr></div>
+									<!--------------------------------------------------------------------------------------------  Head1 --------------------------------------------------------------------------------------------->
+									<table width="1000" height="47" align="center" border="0">
+									<tr>
+											<td width="1000" align="center"><div class="font1">
+											<a href="index.html" class="hover1">หน้าหลัก</a>&nbsp; | &nbsp; 
+											<a href="les1-1.html" class="hover1">บทเรียน</a>&nbsp; | &nbsp;
+											<a href="test1-1.html" class="hover1">แบบทดสอบ</a>&nbsp; | &nbsp;
+											<a href="register.html" class="hover1">สมัครสมาชิก</a>&nbsp; | &nbsp; 
+											<a href="about.html" class="hover1">เกี่ยวกับเรา</a></div></td>
+									</tr>
+									</table>
+									</table></center><br><br>
+<table width="1000" align="center" border="0"><tr><td><p align="left"><font size="21" class="font0">บทที่ 2 Abstraction, Encapsulation และ Modularity</font></p></td></tr></table><br>
+  
+
+ <table width="1000"  align="center" border="0">
+<tr>
+<td>									
+										<table  align="left" border="0" cellspacing="0">
+										<tr>
+										<td><div class="border2"><center><h2>บทเรียน</h2></center><hr width="200"><br>
+																<ul>
+																<li><a href="les1-1.html">บทที่ 1</a></li>
+																<li><a href="les2-1.html">บทที่ 2</a></li>
+																<li><a href="les3-1.html">บทที่ 3</a></li>
+																<li><a href="les4-1.html">บทที่ 4<a/></li>
+																<li><a href="les5-1.html">บทที่ 5</a></li>
+																<li><a href="les6-1.html">บทที่ 6</a></li>
+																<li><a href="les7-1.html">บทที่ 7</a></li>
+																<li><a href="les8-1.html">บทที่ 8</a></li>
+																<li><a href="les9-1.html">บทที่ 9</a></li>
+													</ul>
+											</div></td>
+										</tr>
+										</table>
+ 
+										 <table width="690" align="right" border="0" cellspacing="0">
+										<tr>
+											<td><div id="container">
+													<div class="h1">บทที่ 2 Abstractions หน้าที่ 3</div>
+													<div class="hard_break"><strong>2.4 Association Abstraction</strong><br>&nbsp;&nbsp;&nbsp; ความสัมพันธ์ขั้นพื้นฐานที่สุดคือความสัมพันธ์ที่อยู่บนระนาบเดียวกันหมายความว่า สิ่งของทั้งสองสิ่งที่มีความสัมพันธ์กันเป็นสิ่งที่มีความสำคัญเท่าเทียมกัน ไม่ใช่องค์ประกอบของกันเช่น คนเป็นเจ้าของรถยนต์  แม่มีลูก  สามีรักภรรยา  ดินสออยู่ในกระเป๋า ตามแนวทางของ OO เรียกความสัมพันธ์เรียกความสัมพันธ์ในลักษณะนี้ว่า Association Relationship และเรียกกระบวนการค้นหาความสัมพันธ์ลักษณะนี้ ว่า Association Abstraction<br>&nbsp;&nbsp;&nbsp; <strong>2.4.1 Role และ Association Name</strong><br>&nbsp;&nbsp;&nbsp; เมื่อ Class 2 Class มีความสัมพันธ์แบบ Association ต่อกันแล้ว Association ต้องเป็น Association ที่อธิบายได้ ซึ่งบอกได้ว่า Association แต่ละตัวได้ด้วยชื่อของ Association<br>&nbsp;&nbsp;&nbsp; ใน Association Abstraction หนึ่งๆ Class แต่ละ Class จะแสดงบทบาทอย่างใดอย่างหนึ่งเสมอ  เช่น คนงานในสถานที่ทำงาน Class คน จะแสดงบทบาทเป็น ผู้ถูกจ้าง ในขณะเดียวกัน บริษัท จะแสดงบทบาทเป็น  ผู้จ้าง<br>&nbsp;&nbsp;&nbsp; <strong>2.4.2  Multiplicity</strong><br>&nbsp;&nbsp;&nbsp; การพิจารณา Association ระหว่าง Class สิ่งที่ต้องคำนึงถึง คือ ค่าที่เป็นไปได้ของจำนวนสมาชิกใน Class หนึ่งๆ ที่มีส่วนร่วมใน Association ซึ่งจะเรียกค่าของจำนวนสมาชิกของ Class ที่เป็นไปได้ใน Association ว่า Multiplicity<br>&nbsp;&nbsp;&nbsp; จะเรียกจำนวนที่น้อยที่สุดของสมาชิกของ Class ที่มีส่วนร่วมใน Association ว่า Minimum Multiplicity (Min-card) และเรียกจำนวนที่มากที่สุดของสมาชิกของ Class ที่มีส่วนร่วมใน Association ว่า Maximum Multiplicity (Max-card)<br>&nbsp;&nbsp;&nbsp; <strong>ตัวอย่าง 2.3</strong> ความสัมพันธ์ของ Class ในระบบห้องสมุด<br>&nbsp;&nbsp;&nbsp; 1. สมาชิกของห้องสมุดมีบัตรสมาชิกได้เพียงหนึ่งใบ<br>&nbsp;&nbsp;&nbsp; 2. ในการยืมหนังสือแต่ละครั้ง สมาชิกสามารถยืมได้อย่างน้อย 1 เล่มอย่างมาก 5 เล่ม<br>&nbsp;&nbsp;&nbsp; 3. หนังสือบางเล่มจะมีแผ่น CD โดยแผ่น CD จะถูกแยกไว้ที่บรรณารักษ์ แผ่น CD ที่มากับหนังสือจะมีจำนวนเท่าใดก็ได้ <br>&nbsp;&nbsp;&nbsp; 4. สมาชิกสามารถแจ้งความจำนงค์ขอให้ห้องสมุดจัดหาสื่อวิชาการต่างๆ โดยสมาชิกสามารถแจ้งความจำนงค์ได้มากกว่าหนึ่งรายการ และสื่อหนึ่งรายการอาจถูกแจ้งความจำนงค์โดยสมาชิกมากกว่าหนึ่งคน<br>&nbsp;&nbsp;&nbsp; - Association ระหว่าง Member กับ MemCard<br><img src="pic/f4.jpg">
+													<br>&nbsp;&nbsp;&nbsp; - Association ระหว่าง Member กับ Book<br><img src="pic/f5.jpg">
+													<br>&nbsp;&nbsp;&nbsp; - Association ระหว่าง Bookกับ CompactDisk<br><img src="pic/f6.jpg">
+													<br>&nbsp;&nbsp;&nbsp; - Association ระหว่าง Mediaกับ Member<br><img src="pic/f7.jpg">
+													<br>&nbsp;&nbsp;&nbsp; <strong>2.4.3 การจำลอง Association Abstraction ด้วย UML</strong><br>&nbsp;&nbsp;&nbsp; การเขียนสัญลักษณ์แสดง Association ของ Class 2 Class แสดงด้วยเส้นตรงลากเชื่อมระหว่าง Class ทั้งสอง เส้นที่ลากเชื่อมต้องมีชื่อของ Association กำกับเสมอ รวมถึงลูกศรเพื่อแสดงเส้นทางในการอ่านความสัมพันธ์ Min Card และ Max Card ของทั้งสองกำกับที่ปลายเส้นที่ติดกับ Class
+													<br><center><img src="pic/f8.jpg"></center>
+													<br><hr width="500" size=3><br><table width="600" align="right" border="0"><tr><td align="right"><ul id="menu1">
+																										  <li id="menu2"><a href="les2-2.html" id="menu1lia">Previous</a></li>
+																										  <li  id="menu2"><a href="les2-1.html" id="menu1lia">1</a></li>
+																										  <li  id="menu2"><a href="les2-2.html" id="menu1lia">2</a></li>
+																										  <li  id="menu2"><a href="les2-3.html" id="menu1lia">3</a></li>
+																										  <li  id="menu2"><a href="les2-4.html" id="menu1lia">4</a></li>
+																										  <li  id="menu2"><a href="les2-5.html" id="menu1lia">5</a></li>
+																										  <li  id="menu2"><a href="les2-4.html" id="menu1lia">Next</a></li>
+																										  </ul></td></tr></table>
+													</div>
+													</div></td>
+										</tr>
+										<tr><td></td></tr>
+										</table>
+ </table>
+ 
+ 
+ <!-------------------------------------------------------------------------------------------- footer ----------------------------------------------------------------------------------------->
+<br><br><br><br><br>
+<div class="cc"></div>
+<div class="ff">
+<table width="1000" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr>
+	<td width="500" height="200" valign="top" class="font2"><br>OBJECT ORIENTATION<br> Copyright &copy; 2014 All Right Reserved.</td>
+	<td width="500" height="200" valign="top" class="font2" align="right"><br>CONTACT US <br> &nbsp; Hot line : 036-364487 <br><a href="mailto:bosskung@gmail.com"><img src="pic/icon_email.png"></a>&nbsp; E-mail : bosskung@gmail.com&nbsp;<br>
+	<a href="http://www.facebook.com" target="_blank"><img src="pic/facebook-variation.png"></a>&nbsp;<a href="https://twitter.com/?lang=th" target="_blank"><img src="pic/twitter-variation.png"></a>&nbsp;<a href="http://instagram.com/" target="_blank"><img src="pic/instagram-variation.png"></a>&nbsp;<img src="pic/rss-variation.png"> &nbsp;</td>
+</tr>
+</table></div>
+
+
+
+<!--------------------------------------------------------------------------------------------  back to top ----------------------------------------------------------------------------------------->
+
+<p id="back-to-top" style="display: black; opacity;">
+<a href="#top">
+<span></span>
+</a>
+</p>
+
+
+
+
+</body>
+</html>
